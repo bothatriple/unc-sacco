@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNC SACCO - Savings and Credit Cooperative</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="icons/logo.png" alt="UNC SACCO Logo">
+        </div>
+        <div class="company-info">
+            <h1>UNC SACCO</h1>
+            <p>SAVINGS AND CREDIT COOPERATIVE LTD</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="menu">
+            <ul id="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="loan.html"><i class="fas fa-hand-holding-usd"></i> Loans & Deposit</a></li>
+                <li><a href="form.html"><i class="fas fa-file-alt"></i> Forms</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slideshow Section -->
+   <div class="slideshow-container">
+       <!-- Slides -->
+       <div class="slide fade">
+           <img src="images/n1.jpg" alt="Slide 1">
+           <div class="text">Welcome to UNC SACCO</div>
+       </div>
+       <div class="slide fade">
+           <img src="images/n2.jpg" alt="Slide 2">
+           <div class="text">Your Financial Partner</div>
+       </div>
+       <div class="slide fade">
+           <img src="images/n3.jpg" alt="Slide 3">
+           <div class="text">Empowering Your Future</div>
+       </div>
+       <!-- Navigation Buttons -->
+       <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+       <a class="next" onclick="changeSlide(1)">&#10095;</a>
+   </div>
+
+    <!-- Vision & Mission Section -->
+<section class="vision-mission">
+    <h1>You are not just a member, you own it</h1>
+    <div class="vision-mission-content">
+        <div class="card">
+            <i class="fas fa-eye"></i>
+            <h2>VISION</h2>
+            <p>To be a leading, innovative financial cooperative in Malawi.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-bullseye"></i>
+            <h2>MISSION</h2>
+            <p>To promote socio-economic stability through savings and credit services to its members for self reliance and community development.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services">
+    <h2>HOW TO BECOME A MEMBER</h2>
+    <div class="steps">
+        <div class="step">
+            <i class="fas fa-user-check"></i>
+            <p>Be a payroll employee.</p>
+        </div>
+        <div class="step">
+            <i class="fas fa-handshake"></i>
+            <p>Employer consent to join UNC SACCO.</p>
+        </div>
+        <div class="step">
+            <i class="fas fa-money-bill-wave"></i>
+            <p>Pay membership fees (K1000 entry + K1000 annual).</p>
+        </div>
+        <div class="step">
+            <i class="fas fa-file-alt"></i>
+            <p>Fill out the membership form.</p>
+        </div>
+        <div class="step">
+            <i class="fas fa-coins"></i>
+            <p>Contribute a minimum of MWK 10,000 monthly.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Membership Withdrawal Section -->
+<section class="membership-withdrawal">
+    <h2>Membership Withdrawal</h2>
+    <div class="withdrawal-content">
+        <div class="withdrawal-item">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Member must not have any outstanding loans.</p>
+        </div>
+        <div class="withdrawal-item">
+            <i class="fas fa-calendar-alt"></i>
+            <p>Give 90 days’ notice.</p>
+        </div>
+        <div class="withdrawal-item">
+            <i class="fas fa-percentage"></i>
+            <p>Withdrawal fees depend on years stayed with SACCO:</p>
+            <ul>
+                <li>1 year - 3% of total shares contributed.</li>
+                <li>2-3 years - 2% of total shares contributed.</li>
+                <li>3+ years - 1% of total shares contributed.</li>
+            </ul>
+        </div>
+        <div class="withdrawal-item">
+            <i class="fas fa-money-bill-wave"></i>
+            <p>All member’s savings will be paid out, minus non-redeemable shares of MWK 20,000.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Bring a Member Section -->
+<section class="bring-member">
+    <h2>Bring a Member</h2>
+    <div class="bring-content">
+        <div class="bring-item">
+            <i class="fas fa-gift"></i>
+            <p>Receive a SACCO chitenje for every member you bring.</p>
+        </div>
+        <div class="bring-item">
+            <i class="fas fa-tshirt"></i>
+            <p>Bring 6 members at once and receive a SACCO golf shirt.</p>
+        </div>
+        <div class="bring-item">
+            <i class="fas fa-hand-holding-usd"></i>
+            <p>Receive MWK 20,000 if you bring the whole company or organization. The amount will be deposited into your share account.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-main">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> UNCSACCO, UNC Project, Tidziwe Building, Private Bag A104, Lilongwe</p>
+                <p><i class="fas fa-building"></i> Physical Address: Kamuzu Central Hospital, UNC Project, Tidziwe Building</p>
+                <p><i class="fas fa-envelope"></i> Email: uncsacco@unclilongwe.org</p>
+                <p><i class="fas fa-phone"></i> Phone: 0992657413 / 0884799171 / 0991069104</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:uncsacco@unclilongwe.org"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 UNC SACCO SAVINGS AND CREDIT COOPERATIVE LTD. All Rights Reserved.</p>
+            <p>Registered under the Cooperative Societies Act, 1998 and regulated by the Financial Services Act, 2010 and Financial Cooperatives Act 2011.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loans & Deposit - UNC SACCO</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="icons/logo.png" alt="UNC SACCO Logo">
+        </div>
+        <div class="company-info">
+            <h1>UNC SACCO</h1>
+            <p>SAVINGS AND CREDIT COOPERATIVE LTD</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="menu">
+            <ul id="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="loan.html"><i class="fas fa-hand-holding-usd"></i> Loans & Deposit</a></li>
+                <li><a href="form.html"><i class="fas fa-file-alt"></i> Forms</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Loans Section -->
+    <section class="loans">
+        <h2>Loans</h2>
+        <p>
+            At UNC SACCO, we offer a variety of loan products tailored to meet your financial needs. Whether you're looking for personal loans, business loans, or emergency loans, we've got you covered. Below is a summary of our loan offerings:
+        </p>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loan Type</th>
+                        <th>Amount</th>
+                        <th>Repayment Period</th>
+                        <th>Monthly Interest Rates</th>
+                        <th>fees</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Normal Loan</td>
+                        <td>200% of shares and deposits</td>
+                        <td>12 months</td>
+                        <td>3.7%</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Refinance Loan</td>
+                        <td>100% of shares</td>
+                        <td>12 months</td>
+                        <td>4%</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Express/advance Loan</td>
+                        <td> - </td>
+                        <td>2 months</td>
+                        <td>20%</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Material Loan</td>
+                        <td>200% of shares</td>
+                        <td>12 months</td>
+                        <td>4%</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Emergency Loan</td>
+                        <td>100% of shares</td>
+                        <td>6 months</td>
+                        <td>4%</td>
+                        <td>3%</td>
+                    </tr>
+                     <tr>
+                        <td>Agriculture Loan</td>
+                        <td>200% of shares</td>
+                        <td>6 months</td>
+                        <td>4.5%</td>
+                        <td>3%</td>
+                    </tr>
+                     <tr>
+                        <td>Hoza Friday loan</td>
+                        <td>Up to MWK 100,000</td>
+                        <td>1 month</td>
+                        <td>10%</td>
+                        <td>3%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Deposit Section -->
+    <section class="deposit">
+        <h2>Deposit</h2>
+        <p>
+            Save with UNC SACCO and enjoy competitive interest rates on your deposits. We offer flexible savings plans to help you achieve your financial goals. Below is a summary of our deposit products:
+        </p>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Deposit Type</th>
+                        <th>Interest Rate Per Annum</th>
+                        <th>Minimum Amount</th>
+                        <th>Maturity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ordinary deposits</td>
+                        <td>7%</td>
+                        <td>MWK 5,000</td>
+                        <td>Anytime</td>
+                    </tr>
+                    <tr>
+                        <td>Fixed deposits</td>
+                        <td>8% and negotiable</td>
+                        <td>MWK 5,000 one off deposits</td>
+                        <td>12 months</td>
+                    </tr>
+                    <tr>
+                        <td>3 month call deposits</td>
+                        <td>9% and negotiable</td>
+                        <td>MWK 100,000 one off deposits</td>
+                        <td>3 months</td>
+                    </tr>
+                    <tr>
+                        <td>6 month deposits</td>
+                        <td>8% and negotiable</td>
+                        <td>MWK 100,000 one off deposits</td>
+                        <td>6 months</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-main">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> UNCSACCO, UNC Project, Tidziwe Building, Private Bag A104, Lilongwe</p>
+                <p><i class="fas fa-building"></i> Physical Address: Kamuzu Central Hospital, UNC Project, Tidziwe Building</p>
+                <p><i class="fas fa-envelope"></i> Email: uncsacco@unclilongwe.org</p>
+                <p><i class="fas fa-phone"></i> Phone: 0992657413 / 0884799171 / 0991069104</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:uncsacco@unclilongwe.org"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 UNC SACCO SAVINGS AND CREDIT COOPERATIVE LTD. All Rights Reserved.</p>
+            <p>Registered under the Cooperative Societies Act, 1998 and regulated by the Financial Services Act, 2010 and Financial Cooperatives Act 2011.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
